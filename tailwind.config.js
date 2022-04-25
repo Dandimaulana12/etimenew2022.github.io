@@ -1,7 +1,6 @@
 module.exports = {
-  content: ['index.html', 'node_modules/tw-elements/dist/js/**/*.js'],
+  content: ['index.html', './node_modules/tw-elements/dist/js/**/*.js'],
   theme: {
-    
     extend: {
       fontFamily:{
         'body2': ['body2']
