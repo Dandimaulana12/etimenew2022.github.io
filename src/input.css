@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face{
+        font-family: body2;
+        font-weight: 400;
+        src: url(../autobus-bold-font/Autobusbold-1ynL.ttf);
+    }
+}
+@layer components{
+    .grid-card{
+        @apply  h-36 w-60 bg-yellow-400
+        shadow-2xl shadow-[#9acd32] rounded-tl-2xl
+        rounded-tr-lg rounded-br-lg rounded-bl-lg border-yellow-400/50
+        outline-4 outline-red-500 bg-opacity-95 
+        hover:bg-blue-800 hover:outline-black hover:shadow-slate-900
+        hover:duration-1000 hover:scale-90 lg:hover:scale-90  md:hover:scale-90 
+        sm:hover:scale-90 
+        text-opacity-100 cursor-pointer;
+    }
+    .grid-card-regis{
+        @apply  h-36 w-60 rounded-tl-2xl
+        rounded-tr-lg rounded-br-lg rounded-bl-lg border-yellow-400/50
+        outline-4 cursor-pointer;
+    }
+    .grid-base-regis{
+        @apply grid grid-cols-1 lg:grid-cols-3 md:px-[10px] 
+        md:gap-x-24 sm:grid-cols-2 text-center gap-y-16
+        sm:gap-x-24 md:grid-cols-3 gap-6 px-[120px] lg:ml-[240px] md:ml-[210px] ml-[20px] mt-[65px];
+    }
+}
+@layer utilities{
+    .grid-custom{
+        grid-template-columns : repeat(3,minmax(1, max-content));
+    }
+}
